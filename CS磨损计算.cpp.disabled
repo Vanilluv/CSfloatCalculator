@@ -1,0 +1,140 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <cmath>
+#include <algorithm>
+#include <iomanip>
+
+using namespace std;
+
+// 映射函数
+double map_value(double value, double original_min, double original_max, double target_min, double target_max) {
+    return ((value - original_min) / (original_max - original_min)) * (target_max - target_min) + target_min;
+}
+
+// 生成组合
+void generate_combinations(const vector<double>& material_wear, int k, int start, vector<double>& current, vector<vector<double>>& combinations) {
+    if (current.size() == k) {
+        combinations.push_back(current);
+        return;
+    }
+    for (size_t i = start; i < material_wear.size(); ++i) {
+        current.push_back(material_wear[i]);
+        generate_combinations(material_wear, k, i + 1, current, combinations);
+        current.pop_back();
+    }
+}
+
+int main() {
+    // 用户输入最小值和最大值
+    double min_val, max_val;
+    cout << "请输入映射的最小值: ";
+    cin >> min_val;
+    cout << "请输入映射的最大值: ";
+    cin >> max_val;
+
+    // 用户输入筛选的特定范围
+    double target_min, target_max;
+    cout << "请输入筛选范围的最小值: ";
+    cin >> target_min;
+    cout << "请输入筛选范围的最大值: ";
+    cin >> target_max;
+
+    // 读取材料磨损数据
+    string filename;
+    cout << "请输入材料磨损数据文件名（包括.txt后缀）: ";
+    cin >> filename;
+
+    vector<double> material_wear;
+    ifstream file(filename);
+    if (!file.is_open()) {
+        cerr << "无法打开文件: " << filename << endl;
+        return 1;
+    }
+
+    double value;
+    while (file >> value) {
+        if (value < 0 || value > 1) {
+            cerr << "材料磨损数据必须在0~1范围内" << endl;
+            return 1;
+        }
+        material_wear.push_back(value);
+    }
+    file.close();
+
+    if (material_wear.size() < 10) {
+        cerr << "材料数量不足10个，无法进行炼金" << endl;
+        return 1;
+    }
+
+    // 生成所有可能的10个材料的组合
+    vector<vector<double>> combinations;
+    vector<double> current;
+    generate_combinations(material_wear, 10, 0, current, combinations);
+
+    if (combinations.size() > 1e6) {
+        cerr << "组合数量超过100万，可能需要较长时间处理" << endl;
+    }
+
+    vector<vector<double>> results;
+
+    // 遍历所有组合
+    int num_combinations = combinations.size();
+    int last_reported_percent = -1;
+
+    for (int i = 0; i < num_combinations; ++i) {
+        const vector<double>& current_set = combinations[i];
+
+        // 计算平均磨损
+        double avg_wear = 0.0;
+        for (double val : current_set) {
+            avg_wear += val;
+        }
+        avg_wear /= current_set.size();
+
+        // 映射到用户指定的范围
+        double mapped_wear = map_value(avg_wear, 0, 1, min_val, max_val);
+
+        // 检查是否在目标范围内
+        if (mapped_wear >= target_min && mapped_wear <= target_max) {
+            vector<double> result = current_set;
+            result.push_back(mapped_wear);
+            results.push_back(result);
+        }
+
+        // 进度汇报
+        int current_percent = static_cast<int>(floor((static_cast<double>(i) / num_combinations) * 100));
+        if (current_percent % 10 == 0 && current_percent != last_reported_percent) {
+            cout << "已完成" << current_percent << "/100" << endl;
+            last_reported_percent = current_percent;
+        }
+    }
+
+    // 确保最后完成100%的汇报
+    if (last_reported_percent != 100) {
+        cout << "已完成100/100" << endl;
+    }
+
+    // 将结果输出到CSV文件
+    if (!results.empty()) {
+        string output_filename = filename.substr(0, filename.find_last_of('.')) + "_output.csv";
+        ofstream outfile(output_filename);
+
+        for (const auto& result : results) {
+            for (size_t i = 0; i < result.size(); ++i) {
+                outfile << fixed << setprecision(10) << result[i];
+                if (i != result.size() - 1) {
+                    outfile << ",";
+                }
+            }
+            outfile << endl;
+        }
+
+        cout << "找到" << results.size() << "组符合条件的结果" << endl;
+        cout << "结果已保存到文件: " << output_filename << endl;
+    } else {
+        cout << "没有找到符合条件的结果" << endl;
+    }
+
+    return 0;
+}
