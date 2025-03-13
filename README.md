@@ -28,8 +28,8 @@
 ### 四、吐槽
 ![尝试搞把格洛克玩玩](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/simulation.png)
 
-<center>尝试搞把格洛克玩玩</center>
+<div align = "center">尝试搞把格洛克玩玩</div>
 
 ![V社你是人？](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/result.png)
 
-<center>V社你是人？</centercenter>
+<div align = "center">V社你是人？</div>
