@@ -8,7 +8,7 @@
 
 下面以 <AK-47 | 红线> 为例，已知它的磨损范围为 <0.10~0.70>，那么，我们要炼红线，最终产物的磨损就是：
 
-> 产物磨损 = 材料总磨损 ÷ 10 × ( 0.70 - 0.10 ) + 0.10\
+> 产物磨损 = 材料总磨损 ÷ 10 × ( 0.70 - 0.10 ) + 0.10
 
 本质上是一个将材料总磨损平均值从0~1区间范围内映射到产物的磨损区间内的过程。
 
@@ -27,7 +27,7 @@
 
 ### 四、吐槽
 
-![尝试搞把格洛克玩玩](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/simulation.png '尝试搞把格洛克玩玩')
-
-![V社你是人？](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/result.png 'V社你是人？')
+| ![尝试搞把格洛克玩玩](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/simulation.png '尝试搞把格洛克玩玩') | ![V社你是人？](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/result.png 'V社你是人？') |
+| ------------------------------------------------------------ | :----------------------------------------------------------: |
+| 尝试搞把格洛克玩玩                                           |                         V社你是人？                          |
 
