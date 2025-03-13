@@ -17,10 +17,9 @@
 ![CSfloatCalculator流程图](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/CSfloatCalculator.png)
 
 本项目将整个磨损计算流程打包以便使用，若想要click-to-run，请访问[csfloatcalculator.streamlit.app/](https://csfloatcalculator.streamlit.app/)以进行使用，若你的电脑里面有<MATLAB>，可以下载后在本地使用，下面我放两张本地使用的图片。
-
 | ![](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/1.png) | ![](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/2.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 使用相对路径，这里.txt与.m在一个目录下面                     | 使用绝对路径，输出的.csv文件也会在绝对路径下面               |
+| :----------------------------------------------------------: | ------------------------------------------------------------ |
+|           使用相对路径，这里.txt与.m在一个目录下面           | 使用绝对路径，输出的.csv文件也会在绝对路径下面               |
 
 ### 三、特别致谢
 
@@ -28,7 +27,7 @@
 
 ### 四、吐槽
 
-![尝试搞把格洛克玩玩](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/simulation.png)
+![尝试搞把格洛克玩玩](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/simulation.png '尝试搞把格洛克玩玩')
 
-![V社你是人？](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/result.png)
+![V社你是人？](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/result.png 'V社你是人？')
 
