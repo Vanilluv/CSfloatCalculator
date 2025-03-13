@@ -27,12 +27,10 @@
 
 ### 四、吐槽
 
-<img src="https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/simulation.png" alt="尝试搞把格洛克玩玩" width="50%">
-
-![尝试搞把格洛克玩玩](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/simulation.png)
+<img src="https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/simulation.png" width=50%>
 
 <div align = "center">尝试搞把格洛克玩玩</div>
 
-![V社你是人？](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/result.png)
+<img src="https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/result">
 
 <div align = "center">V社你是人？</div>
