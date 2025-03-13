@@ -23,14 +23,10 @@
 
 ### 三、特别致谢
 
-感谢GamerNoTitle对本项目的支持，上面提到的网站是他进行实现的，访问链接：[github](https://github.com/GamerNoTitle) [个人网站]([https://bili33.top](https://bili33.top/))
+感谢GamerNoTitle对本项目的支持，上面提到的网站是他进行实现的，访问链接：[github](https://github.com/GamerNoTitle) [个人网站]([https://bili33.top])
 
 ### 四、吐槽
-<style>
-table th:first-of-type {width: 30%;}
-table th:nth-of-type(2) {width:70%;}
-</style>
-| ![尝试搞把格洛克玩玩](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/simulation.png '尝试搞把格洛克玩玩') | ![V社你是人？](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/result.png 'V社你是人？') |
+| ![尝试搞把格洛克玩玩](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/simulation.png '尝试搞把格洛克玩玩')<img width=30%/> | ![V社你是人？](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/result.png 'V社你是人？') |
 | ------------------------------------------------------------ | :----------------------------------------------------------: |
 | 尝试搞把格洛克玩玩                                           |                         V社你是人？                          |
 
