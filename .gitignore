@@ -1,0 +1,12 @@
+# MATLAB
+compiled/
+CSfloatCalculator/
+CSfloatCalculator.prj
+*.asv
+
+# 非实例
+20250312_Block18_st_2.txt
+20250312_Block18_st_2_output.csv
+
+#其他
+*.xmind
