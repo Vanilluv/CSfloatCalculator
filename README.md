@@ -26,10 +26,13 @@
 感谢GamerNoTitle对本项目的支持，上面提到的网站是他进行实现的，访问链接：[github](https://github.com/GamerNoTitle) [个人网站](https://bili33.top)
 
 ### 四、吐槽
-<div align = "center">![尝试搞把格洛克玩玩](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/simulation.png){width=50%}</div>
+
+<img src="https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/simulation.png" alt="尝试搞把格洛克玩玩">
+
+![尝试搞把格洛克玩玩](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/simulation.png){width=“50%”}
 
 <div align = "center">尝试搞把格洛克玩玩</div>
 
-<div align="center">![V社你是人？](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/result.png)</div>
+![V社你是人？](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/result.png)
 
 <div align = "center">V社你是人？</div>
