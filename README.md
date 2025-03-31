@@ -14,7 +14,7 @@
 
 ### 二、项目功能
 
-![CSfloatCalculator流程图（Ver.20250331）](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/CSfloatCalculator20250331.png)
+![CSfloatCalculator流程图（Ver.20250331）](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/CSFloatCalculator20250331.png)
 
 本项目将整个磨损计算流程打包以便使用，若想要click-to-run，请访问[csfloatcalculator.streamlit.app/](https://csfloatcalculator.streamlit.app/)以进行使用，若你的电脑里面有<MATLAB>，可以下载后在本地使用，下面我放两张本地使用的图片。
 
