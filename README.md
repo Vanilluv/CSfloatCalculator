@@ -14,9 +14,21 @@
 
 ### 二、项目功能
 
-![CSfloatCalculator流程图](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/CSfloatCalculator.png)
+![CSfloatCalculator流程图（Ver.20250331）](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/CSfloatCalculator20250331.png)
 
 本项目将整个磨损计算流程打包以便使用，若想要click-to-run，请访问[csfloatcalculator.streamlit.app/](https://csfloatcalculator.streamlit.app/)以进行使用，若你的电脑里面有<MATLAB>，可以下载后在本地使用，下面我放两张本地使用的图片。
+
+```
+使用方法：（请注意，本使用方法建立在你的电脑上面已经有<MATLAB>的情况下）
+
+1、下载本项目，打开.m脚本，点击<运行>或者使用键盘上面的<F5>来运行
+2、根据提示，输入相应的数据
+3、等待结果计算完成
+4、打开输出的.csv文件进行查看
+```
+
+
+
 | ![相对路径结果图](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/1.png) | ![绝对路径结果图](https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/2.png) |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |           使用相对路径，这里.txt与.m在一个目录下面           |        使用绝对路径，输出的.csv文件也会在绝对路径下面        |
@@ -38,3 +50,11 @@
 </div>
 
 <div align = "center">V社你是人？</div>
+
+# 
+
+### 五、更新日志
+
+[20250312] 项目创建并完成
+
+[20250331] .m脚本添加功能：必须使用的磨损，readme添加使用方法介绍
