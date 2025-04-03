@@ -46,7 +46,7 @@
 <div align = "center">尝试搞把格洛克玩玩</div>
 
 <div align="center">
-    <img src="https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/result20250403.jpg" width=50% align="center">
+    <img src="https://github.com/Vanilluv/CSfloatCalculator/blob/main/pic/result20250403.jpg" align="center">
 </div>
 
 
